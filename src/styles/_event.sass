@@ -1,0 +1,41 @@
+@use "variables"
+
+.event
+    padding: 80px 0
+    &__container
+        align-items: center
+        display: flex
+        gap: 40px
+        width: 960px
+        margin: 0 auto
+        position: relative
+
+    &--party
+        background-image: linear-gradient(variables.$degrade1, variables.$degrade2)
+
+    &--drinks
+        background-image: linear-gradient(variables.$degrade2, variables.$degrade1)
+
+    &--music
+        background-image: linear-gradient(variables.$degrade1, variables.$degrade4)
+
+    &--barbecue
+        background-image: linear-gradient(variables.$degrade4, variables.$degrade1)
+
+    &__image
+        border-radius: 20px
+        max-width: 240px
+
+    &--image-right
+        .event__container
+            flex-direction: row-reverse
+
+    &__details
+        &__title
+            margin-bottom: 16px
+            font-size: 30px
+            font-weight: bold
+        
+        &__text
+            font-size: 18px
+            line-height: 22px

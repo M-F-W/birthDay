@@ -1,0 +1,38 @@
+@use "variables"
+
+.hero
+    background-image: url(../images/hero_bg.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 64px
+    padding-bottom: 100px
+    position: relative
+
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        content: ""
+        background-color: #000
+        opacity: .7
+
+    &__container
+        position: relative
+        width: 960px
+        width: 100%
+        margin: 0 auto
+
+    &__bolo
+        margin: 0 auto
+        height: 400px
+        display: block
+    
+    &__text
+        text-align: center
+        font-weight: 80px
+        font-size: 40px
+        margin: 64px 0
+        color: variables.$textColor
+        line-height: 56px
